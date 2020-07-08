@@ -21,13 +21,19 @@
              font-family: Arial, sans-serif;
              font-size: 13px;
            }
+           a:link, a:visited{
+             text-decoration: none;
+           }
+           a:hover, a:active{
+             text-decoration: underline;
+           }
            img{
              margin-top: 100px;
              margin-bottom: 20px;
            }
            form{
                 text-align: center;
-              }
+           }
           img{
             display: block;
             margin-left: auto;
@@ -36,27 +42,31 @@
           }
 
           form > input{
-            border-color: lightgrey;
             border-radius: 25px;
-            width: 555px;
+            border-style: solid;
+            width: 450px;
             height: 40px;
           }
           #searchbar{
-            border-color: black;
+            border-color: #d4d4d4;
+            border-width: 1px;
             margin: 10px;
             padding-left: 40px;
             font-size: 15px;
+            box-shadow: none;
           }
           .submit{
+            margin-top: 10px;
             width: auto;
             height: 40px;
             background: #f2f2f2;
             border-radius: 0px;
-            border-color: none;
-            padding: 10px;
+            border: none;
+            padding-left: 20px;
+            padding-right: 20px;
             box-shadow: none;
-            font-size: 15px;
-            color: #6e6e6e;
+            font-size: 14px;
+            color: #828282;
           }
         </style>
     </head>
@@ -68,7 +78,9 @@
             <a class="link" href="https://store.google.com/">Store</a>
           </p>
           <p class="alignright">
-            Gmail &nbsp;&nbsp; Images
+            <a style="color: black;" class="link" href="https://mail.google.com/mail/">Images</a>
+            &nbsp;&nbsp;
+            <a style="color: black;" class="link" href="https://mail.google.com/mail/">Advanced Search</a>
           </p>
         </div>
         <div style="clear: both;"></div>
