@@ -2,95 +2,52 @@
 <html lang="en">
     <head>
         <title>Google</title>
-        <style>
-          div{
-            color:#5a5e5b;
-            font-family: Arial, sans-serif;
-            font-size: 13px;
-            margin: 15px;
-          }
-          .alignleft {
-	          float: left;
-          }
-          .alignright {
-	           float: right;
-             color: black;
-           }
-           .link{
-             color:#5a5e5b;
-             font-family: Arial, sans-serif;
-             font-size: 13px;
-           }
-           a:link, a:visited{
-             text-decoration: none;
-           }
-           a:hover, a:active{
-             text-decoration: underline;
-           }
-           img{
-             margin-top: 100px;
-             margin-bottom: 20px;
-           }
-           form{
-                text-align: center;
-           }
-          img{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: auto;
-          }
-
-          form > input{
-            border-radius: 25px;
-            border-style: solid;
-            width: 450px;
-            height: 40px;
-          }
-          #searchbar{
-            border-color: #d4d4d4;
-            border-width: 1px;
-            margin: 10px;
-            padding-left: 40px;
-            font-size: 15px;
-            box-shadow: none;
-          }
-          .submit{
-            margin-top: 10px;
-            width: auto;
-            height: 40px;
-            background: #f2f2f2;
-            border-radius: 0px;
-            border: none;
-            padding-left: 20px;
-            padding-right: 20px;
-            box-shadow: none;
-            font-size: 14px;
-            color: #828282;
-          }
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div id="header">
+      <div id="pagecontainer">
+        <div id="contentwrap">
+          <div id="header">
+            <p class="alignleft">
+              <a class="link" href="https://about.google">About</a>
+              &nbsp;&nbsp;
+              <a class="link" href="https://store.google.com/">Store</a>
+            </p>
+            <p class="alignright">
+              <a style="color: black;" class="link" href="googleimages.html">Images</a>
+              &nbsp;&nbsp;
+              <a style="color: black;" class="link" href="advancedsearch.html">Advanced Search</a>
+            </p>
+          </div>
+          <div style="clear: both;"></div>
+          <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="googlelogo" height="25%" id="logo">
+          <form action="https://google.com/search">
+              <input type="text" align="center" name="q" id="searchbar">
+              <p>
+              </p>
+              <input type="submit" align="center" value="Google Search" class="submit">
+              <input type="submit" align="center" value="I'm Feeling Lucky" class="submit" name="btnI">
+            </form>
+        </div>
+        <div id="footer">
           <p class="alignleft">
-            <a class="link" href="https://about.google">About</a>
-            &nbsp;&nbsp;
-            <a class="link" href="https://store.google.com/">Store</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="footerlink" href="https://ads.google.com/intl/en_us/home/?"> Advertising</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="footerlink" href="https://smallbusiness.withgoogle.com/help/"> Business</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="footerlink" href="https://www.google.com/search/howsearchworks/?fg=1"> How Search works</a>
           </p>
           <p class="alignright">
-            <a style="color: black;" class="link" href="https://mail.google.com/mail/">Images</a>
-            &nbsp;&nbsp;
-            <a style="color: black;" class="link" href="https://mail.google.com/mail/">Advanced Search</a>
+            <a class="footerlink" href="https://policies.google.com/privacy?fg=1"> Privacy</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="footerlink" href="https://policies.google.com/terms?fg=1"> Terms</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="footerlink" href="https://support.google.com/websearch/"> Settings</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
-        </div>
-        <div style="clear: both;"></div>
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="googlelogo" height="25%">
-        <form action="https://google.com/search">
-            <input type="text" align="center" ame="q" id="searchbar">
-            <p>
-            </p>
-            <input type="submit" align="center" value="Google Search" class="submit">
-            <input type="submit" align="center" value="I'm Feeling Lucky" class="submit">
-        </form>
+       </div>
+       <div style="clear: both;"></div>
+     </div>
     </body>
 </html>
