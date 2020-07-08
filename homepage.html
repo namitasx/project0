@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google</title>
+        <style>
+          div{
+            color:#5a5e5b;
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            margin: 15px;
+          }
+          .alignleft {
+	          float: left;
+          }
+          .alignright {
+	           float: right;
+             color: black;
+           }
+           .link{
+             color:#5a5e5b;
+             font-family: Arial, sans-serif;
+             font-size: 13px;
+           }
+           img{
+             margin-top: 100px;
+             margin-bottom: 20px;
+           }
+           form{
+                text-align: center;
+              }
+          img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: auto;
+          }
+
+          form > input{
+            border-color: lightgrey;
+            border-radius: 25px;
+            width: 555px;
+            height: 40px;
+          }
+          #searchbar{
+            border-color: black;
+            margin: 10px;
+            padding-left: 40px;
+            font-size: 15px;
+          }
+          .submit{
+            width: auto;
+            height: 40px;
+            background: #f2f2f2;
+            border-radius: 0px;
+            border-color: none;
+            padding: 10px;
+            box-shadow: none;
+            font-size: 15px;
+            color: #6e6e6e;
+          }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+          <p class="alignleft">
+            <a class="link" href="https://about.google">About</a>
+            &nbsp;&nbsp;
+            <a class="link" href="https://store.google.com/">Store</a>
+          </p>
+          <p class="alignright">
+            Gmail &nbsp;&nbsp; Images
+          </p>
+        </div>
+        <div style="clear: both;"></div>
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="googlelogo" height="25%">
+        <form action="https://google.com/search">
+            <input type="text" align="center" ame="q" id="searchbar">
+            <p>
+            </p>
+            <input type="submit" align="center" value="Google Search" class="submit">
+            <input type="submit" align="center" value="I'm Feeling Lucky" class="submit">
+        </form>
+    </body>
+</html>
