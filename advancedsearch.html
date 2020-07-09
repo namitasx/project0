@@ -32,17 +32,18 @@
             font-size: 16px;
             color: black;
           }
-          div > table{
+          form > table{
             margin-top: 20px;
             font-size: 13px;
             color: black;
+            text-align: left;
           }
           td{
             padding-right: 20px;
             padding-top: 0px;
             padding-bottom: 10px;
           }
-          form > input{
+          td > input{
             border-radius: 0px;
             border-style: solid;
             border-color: #c4c4c4;
@@ -50,6 +51,25 @@
             border-shadow: 1px;
             width: 475px;
             height: 25px;
+          }
+          #finalbutton{
+            display: block;
+            text-align: center;
+            color: white;
+            font-size: 11px;
+            font-weight: bold;
+            border-radius: 2px;
+            background-color: #267eeb;
+            width: 130px;
+            height: 34px;
+            border-style: solid;
+            border-color: #025fcf;
+            margin-left: auto;
+            margin-top: 10px;
+            margin-right: 0;
+          }
+          #finalbutton:hover{
+            background-color: #2375db;
           }
 
         </style>
@@ -71,47 +91,42 @@
           <div style="clear: both;"></div>
           <div id="body1">
             Find pages with...
+          <form action="https://google.com/search">
             <table>
               <tbody>
                 <tr>
-                  <td>all these words:</td>
-                  <td>
-                    <form action="https://google.com/search">
-                        <input type="text" name="q">
-                        <input type="submit" align="center" value="Search" class="submit">
-                    </form>
-                  <td>
+                    <td>all these words:</td>
+                    <td>
+                        <input type="text" name="as_q">
+                    <td>
                 </tr>
                 <tr>
                   <td>this exact word or phrase</td>
                   <td>
-                    <form action="https://google.com/search">
-                        <input type="text" name="q">
-                        <input type="submit" align="center" value="Search" class="submit">
-                    </form>
+                        <input type="text" name="as_epq">
                   <td>
                 </tr>
                 <tr>
                   <td>any of these words:</td>
                   <td>
-                    <form action="https://google.com/search">
-                        <input type="text" name="q">
-                        <input type="submit" align="center" value="Search" class="submit">
-                    </form>
+                        <input type="text" name="as_oq">
                   <td>
                 </tr>
                 <tr>
                   <td>none of these words:</td>
                   <td>
-                    <form action="https://google.com/search">
-                        <input type="text" name="q">
-                        <input type="submit" align="center" value="Search" class="submit">
-                    </form>
+                      <input type="text" name="as_eq">
                   <td>
                 </tr>
+                <tr>
+                  <td> </td>
+                  <td>
+                    <input type="submit" align="center" value="Advanced Search" id="finalbutton">
+                  </td>
+                </tr>
               </tbody>
-
-            </table>
+              </table>
+              </form>
           </div>
         </div>
         <div id="footer">
